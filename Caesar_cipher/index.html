@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caesar's Cipher</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Grenze|Rye&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <h1>Caesar's Cipher</h1>
+      <div class="form">
+        <p>
+          This is the <span>ROT13</span> cipher, where the values of the letters
+          are shifted by 13 places.
+        </p>
+        <div class="container">
+          <textarea
+            id="input"
+            placeholder="Place the text here"
+            class="panel"
+            cols="30"
+            rows="5"
+          ></textarea>
+          <div class="buttons panel">
+            <button type="submit" id="convert">Convert</button>
+            <button type="submit" id="clear">Clear</button>
+          </div>
+          <textarea
+            id="output"
+            placeholder="The result"
+            class="panel"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

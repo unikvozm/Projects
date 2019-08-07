@@ -1,0 +1,57 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  background-image: url("https://images.pexels.com/photos/159722/algebra-analyse-architect-architecture-159722.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 1;
+  color: white;
+  font-family: 'Lora', serif;
+  font-size: 5vmin;
+}
+.form {
+  width: 70%;
+  height: 50%;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  background-image: linear-gradient(45deg, red, blue);
+  opacity: 0.8;
+  border-radius: 20%;
+  border: 5px outset purple;
+}
+#number {
+  font-size: 5vmin;
+  text-align: center;
+  margin: auto auto;
+}
+#convert {
+  font-size: 5vmin;
+  top: 10%;
+  display: block;
+  margin: 2% auto 2% auto;
+  border: 5px outset;
+}
+#convert:active {
+  opacity: 0.9;
+}
+label {
+  font-size: 4vmin;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 900;
+}
+#roman {
+  font-size: 5vmin;
+  text-align: center;
+  margin: auto auto;
+  font-family: 'Lora', serif;
+}

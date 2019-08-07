@@ -1,0 +1,74 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #feee9d;
+}
+* {
+	position: absolute;
+}
+.head {
+	border-radius: 50%;
+	background-color: #fbd671;
+	width: 50vmin;
+	height: 50vmin;
+	top: 50%;
+	left: 50%;
+	box-shadow: inset -5px -5px 0 #efbb42;
+	transform: translate(-50%, -50%);
+}
+.face {
+	width: 50%;
+	height: 60%;
+	left: 25%;
+	top: 25%;
+}
+.mouth {
+	background-color: #20184e;
+	width: 100%;
+	height: 45%;
+	left: 0;
+	bottom: 0;
+	border-bottom-left-radius: 100% 200%;
+  border-bottom-right-radius: 100% 200%;
+	border: 3px solid #20184e;
+	overflow: hidden;
+}
+.tongue {
+	width: 65%;
+	height: 70%;
+	background-color: #f15962;
+	border-radius: 50%;
+	top: 50%;
+	left: 17.5%;
+}
+.eyes {
+	width: 100%;
+	height: 40%;
+	top: 5%;
+	left: 0;
+}
+.eye {
+	background-color: #20184e;
+	width: 25%;
+	height: 80%;
+	border-radius: 50%;
+}
+.left-eye {
+	left: 12%;
+}
+.right-eye {
+	right: 12%;
+}
+.pupil {
+	width: 30%;
+	height: 35%;
+	border-radius: 50%;
+	background-color: #fbd671;
+	top: 20%;
+	left: 15%;
+}

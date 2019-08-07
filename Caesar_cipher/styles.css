@@ -1,0 +1,60 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  position: fixed;
+  background-image: url("https://cdn.pixabay.com/photo/2018/01/08/08/35/alzheimers-3068938_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.background {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2vmin outset white;
+  width: 90%;
+  height: 80%;
+  margin: auto auto;
+  margin-top: 5%;
+  text-align: center;
+}
+span {
+  color: red;
+}
+h1 {
+  color: blue;
+  font-size: 7vmin;
+  font-family: "Rye", cursive;
+}
+.form {
+  font-family: "Grenze", serif;
+  font-size: 5vmin;
+  text-align: justify;
+  padding: 1%;
+  color: green;
+}
+.container {
+  display: flex;
+}
+.panel {
+  flex: 1;
+  margin: 2%;
+}
+button {
+  display: block;
+  height: 40%;
+  width: 70%;
+  margin: auto auto;
+  font-family: "Grenze", serif;
+  font-size: 5vmin;
+  color: darkgreen;
+}
+#clear {
+  margin-top: 7%;
+  color: darkred;
+}
+textarea {
+  text-transform: uppercase;
+  font-size: 3vmin;
+  color: darkblue;
+}
