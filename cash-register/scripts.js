@@ -41,7 +41,7 @@ document.getElementById("calc").addEventListener("click", function() {
     status = "INSUFFICIENT_FUNDS";
   }
 
-  // if cash-in-drawer is equal to the change due
+  // if there's no change due
   else if (changeDue === 0) {
     status = "CLOSED";
   }
