@@ -1,0 +1,63 @@
+html {
+  width: 94vw;
+  height: 94vh;
+  background-color: gray;
+}
+body {
+  width: 92vw;
+  height: 92vh;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  padding: 2vh 2vw 2vh 2vw;
+  font-size: 2vmin;
+  font-family: "Oleo Script", cursive;
+  font-weight: 200;
+  background-color: azure;
+}
+.drawer {
+  float: left;
+  width: 30vw;
+  border: 1vmin outset blueviolet;
+  padding: 1%;
+  margin-right: 0;
+}
+form {
+  text-align: right;
+}
+#container1 {
+  margin-left: 50vw;
+  border: 1vmin outset blueviolet;
+  width: 20vw;
+  padding: 1%;
+  text-align: right;
+}
+input {
+  font-family: "Oleo Script", cursive;
+  text-align: center;
+}
+h1,
+p {
+  text-align: center;
+}
+button {
+  background-color: rgb(248, 149, 0);
+  font-size: 1.2em;
+  color: blue;
+  margin: auto auto;
+  margin-top: 3vh;
+  display: block;
+  padding: 1%;
+  border-color: green;
+}
+.container2 {
+  margin-left: 35vw;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cash Register</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oleo+Script:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Cash Register</h1>
+    <p>All amounts in US dollars.</p>
+    <div class="drawer">
+      <p>Available cash in the drawer:</p>
+      <form id="drawer">
+        <label for="PENNY">PENNY: </label>
+        <input type="number" name="PENNY" value="0.00" step="0.01" min="0" />
+        <br />
+        <label for="NICKEL">NICKEL: </label>
+        <input type="number" name="NICKEL" value="0.00" step="0.05" min="0" />
+        <br />
+        <label for="DIME">DIME: </label>
+        <input type="number" name="DIME" value="0.00" step="0.10" min="0" />
+        <br />
+        <label for="QUARTER">QUARTER: </label>
+        <input type="number" name="QUARTER" value="0.00" step="0.25" min="0" />
+        <br />
+        <label for="HALF">HALF: </label>
+        <input type="number" name="HALF" value="0.00" step="0.50" min="0" />
+        <br />
+        <label for="ONE">ONE: </label>
+        <input type="number" name="ONE" value="0.00" step="1.00" min="0" />
+        <br />
+        <label for="FIVE">FIVE: </label>
+        <input type="number" name="FIVE" value="0.00" step="5.00" min="0" />
+        <br />
+        <label for="TEN">TEN: </label>
+        <input type="number" name="TEN" value="0.00" step="10.00" min="0" />
+        <br />
+        <label for="TWENTY">TWENTY: </label>
+        <input type="number" name="TWENTY" value="0.00" step="20.00" min="0" />
+        <br />
+        <label for="FIFTY">FIFTY: </label>
+        <input type="number" name="FIFTY" value="0.00" step="50" min="0" />
+        <br />
+        <label for="ONE_HUNDRED">ONE HUNDRED: </label>
+        <input
+          type="number"
+          name="ONE_HUNDRED"
+          value="0.00"
+          step="100"
+          min="0"
+        />
+      </form>
+    </div>
+    <form id="container1">
+      <label for="price">Total Price: </label>
+      <input
+        name="price"
+        type="number"
+        id="price"
+        placeholder="0.00"
+        step="0.01"
+        min="0"
+      />
+      <br />
+      <label for="cash">Cash Received: </label>
+      <input
+        type="number"
+        name="cash"
+        id="cash"
+        placeholder="0.00"
+        step="0.01"
+        min="0"
+      />
+      <br />
+      <label for="changeDue">Change Due: </label>
+      <input type="number" name="changeDue" id="changeDue" />
+    </form>
+    <button type="submit" id="calc">Calculate</button>
+    <div class="container2">
+      <p id="status"></p>
+      <p id="change"></p>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
