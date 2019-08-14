@@ -42,7 +42,7 @@ document.getElementById("calc").addEventListener("click", function() {
   }
 
   // if cash-in-drawer is equal to the change due
-  else if (cash_in_drawer === changeDue) {
+  else if (changeDue === 0) {
     status = "CLOSED";
   }
   // When you need to give some change
