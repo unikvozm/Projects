@@ -14,7 +14,7 @@ function input(x) {
     if (isOperator(x) || x === ".") {
       formula = "0" + x;
       display = "0" + x;
-    } else {
+    } else if (x !== ")") {
       formula = x;
       display = x;
     }
@@ -22,8 +22,21 @@ function input(x) {
     // continuing the calculation
     let prev = formula[formula.length - 1]; //the previous input
     let secondLast = formula[formula.length - 2]; // the second last input
+    if (prev === "=") {
+      if (isOperator(x)) {
+        formula = display;
+      } else if (x !== ")") {
+        formula = "";
+        if (x === ".") {
+          display = "0" + x;
+          formula = "0" + x;
+        } else {
+          display = x;
+        }
+      }
+    }
     if (isOperator(x)) {
-      if (prev !== "(" || x === '-') {
+      if (prev !== "(" || x === "-") {
         if (prev === "=") {
           formula = display;
         }
@@ -55,7 +68,7 @@ function input(x) {
     } else if (x === "(") {
       openParNum++;
       display = x;
-      if (!isOperator(prev) && prev !== "(") {
+      if (!isOperator(prev) && prev !== "(" && prev !== "=") {
         formula += "*" + x;
       } else {
         formula += x;
