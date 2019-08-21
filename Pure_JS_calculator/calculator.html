@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Natalia's JavaScript Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <h4 id="formula">_</h4>
+        <h4 id="display">0</h4>
+      </div>
+      <div class="buttons">
+        <button id="seven" onclick="input('7')">7</button>
+        <button id="eight" onclick="input('8')">8</button>
+        <button id="nine" onclick="input('9')">9</button>
+        <button id="open-par" onclick="input('(')">(</button>
+        <button id="close-par" onclick="input(')')">)</button>
+        <br />
+        <button id="four" onclick="input('4')">4</button>
+        <button id="five" onclick="input('5')">5</button>
+        <button id="six" onclick="input('6')">6</button>
+        <button id="multiply" onclick="input('*')">x</button>
+        <button id="divide" onclick="input('/')">/</button>
+        <br />
+        <button id="one" onclick="input('1')">1</button>
+        <button id="two" onclick="input('2')">2</button>
+        <button id="three" onclick="input('3')">3</button>
+        <button id="add" onclick="input('+')">+</button>
+        <button id="subtract" onclick="input('-')">-</button>
+        <br />
+        <button id="zero" onclick="input('0')">0</button>
+        <button id="decimal" onclick="input('.')">.</button>
+        <button id="del" onclick="clearLast()">del</button>
+        <button id="clear" onclick="clearAll()">AC</button>
+        <button id="equals" onclick="calculate()">=</button>
+      </div>
+    </div>
+		<script src="calculator.js"></script>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+  </body>
+</html>

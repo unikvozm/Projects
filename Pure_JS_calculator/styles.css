@@ -1,0 +1,37 @@
+body {
+  width: 100vw;
+  position: relative;
+  font-family: "Fredoka One", cursive;
+}
+.calculator {
+  width: 50vw;
+  position: absolute;
+  margin: 2% 20%;
+  background-color: rgb(0, 425, 425);
+  background-radius: 5%;
+  border: 5px outset rgb(100, 300, 300);
+  border-radius: 5%;
+}
+.display {
+  width: 90%;
+  margin: 3%;
+  font-size: 4vmin;
+  padding: 2%;
+  background-color: rgb(300, 300, 300);
+  border-radius: 10px;
+}
+#formula {
+  max-width: 90%;
+  min-height: 10%;
+}
+.buttons {
+  width: 90%;
+  margin: 8%;
+}
+button {
+  font-size: 3vmin;
+  width: 14%;
+  padding: 2%;
+  margin: 2%;
+  font-family: "Fredoka One", cursive;
+}
